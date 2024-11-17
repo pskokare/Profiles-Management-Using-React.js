@@ -1,0 +1,285 @@
+.profile-detail {
+  background: radial-gradient(circle, rgb(37, 172, 231) 0%, rgb(138, 199, 232) 100%);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+
+.profile-detail img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-detail h2 {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.profile-detail p {
+  font-size: 1.1em;
+  color: rgb(100, 3, 3);
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 3em;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.back-button:hover {
+  color: green;
+}
+
+.map-button {
+  background-color: #28a745;
+}
+
+.map-button:hover {
+  background-color: #218838;
+}
+
+.profile-detail button {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.profile-detail h2,
+.profile-detail p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .profile-detail img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .profile-detail h2 {
+    font-size: 1.8em;
+  }
+
+  .profile-detail p {
+    font-size: 1em;
+  }
+
+  .profile-detail {
+    padding: 20px;
+  }
+
+  .profile-detail h2,
+  .profile-detail p {
+    margin-bottom: 15px;
+  }
+
+  .map-button {
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-detail {
+    padding: 15px;
+  }
+
+  .profile-detail img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-detail h2 {
+    font-size: 1.6em;
+  }
+
+  .profile-detail p {
+    font-size: 0.95em;
+  }
+
+  .map-button {
+    padding: 7px 15px;
+  }
+
+  .profile-detail h2,
+  .profile-detail p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-detail {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .profile-detail img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-detail h2 {
+    font-size: 1.4em;
+  }
+
+  .profile-detail p {
+    font-size: 0.9em;
+  }
+
+  .back-button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+
+  .map-button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+
+  .profile-detail h2,
+  .profile-detail p {
+    margin-bottom: 8px;
+  }
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 3em;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  padding: 7px 15px;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: green;
+}
+
+.edit-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.save-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+@media (max-width: 1024px) {
+  .back-button {
+    font-size: 2.5em;
+    padding: 5px 10px;
+  }
+
+  .edit-button,
+  .delete-button,
+  .save-button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  .edit-input {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    font-size: 2em;
+    padding: 5px 8px;
+  }
+
+  .edit-button,
+  .delete-button,
+  .save-button {
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
+
+  .edit-input {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button {
+    font-size: 1.5em;
+    padding: 5px 5px;
+  }
+
+  .edit-button,
+  .delete-button,
+  .save-button {
+    font-size: 0.7em;
+    padding: 5px 10px;
+    margin: 3px;
+  }
+
+  .edit-input {
+    font-size: 0.8em;
+    padding: 5px;
+    margin: 5px 0;
+  }
+}
